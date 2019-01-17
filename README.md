@@ -1,3 +1,3 @@
-# Advanced-React
+# sick-fits-client
 
-frontend
+frontend application
