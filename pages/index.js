@@ -1,9 +1,10 @@
 import React from "react";
+import Items from '../components/Items';
 
 const Home = props => (
   <React.Fragment>
-    <p>Here is Home page</p>
-  </React.Fragment>
+    <Items />
+  </React.Fragment >
 );
 
 export default Home;
