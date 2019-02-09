@@ -1,9 +1,8 @@
 import React from "react";
+import CreateItem from '../components/CreateItem';
 
 const Sell = props => (
-  <React.Fragment>
-    <p>Here is Sell page!</p>
-  </React.Fragment>
+  <CreateItem />
 );
 
 export default Sell;
