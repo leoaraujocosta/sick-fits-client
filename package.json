@@ -22,11 +22,18 @@
     "apollo-boost": "0.4.2",
     "apollo-client": "2.6.2",
     "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.0.1",
     "babel-plugin-styled-components": "1.10.0",
     "date-fns": "2.0.0-alpha.26",
     "downshift": "3.2.10",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.14.0",
+    "eslint": "5.16.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.13.0",
+    "eslint-plugin-react-hooks": "1.6.0",
     "graphql": "14.3.1",
     "graphql-tag": "2.10.1",
     "lodash.debounce": "4.0.8",
@@ -44,13 +51,18 @@
     "waait": "1.0.5"
   },
   "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-react": "7.0.0",
     "babel-jest": "24.8.0",
     "babel-plugin-module-resolver": "3.2.0",
     "casual": "1.6.2",
     "enzyme-to-json": "3.3.5",
     "graphql-tools": "4.0.4",
     "jest": "24.8.0",
-    "jest-transform-graphql": "2.1.0"
+    "jest-transform-graphql": "2.1.0",
+    "prettier": "1.18.2"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/jest.setup.js",
@@ -64,58 +76,15 @@
       "^.+\\.js?$": "babel-jest"
     }
   },
-  "//": "This is our babel config, I prefer this over a .babelrc file",
-  "babel": {
-    "env": {
-      "development": {
-        "presets": [
-          "next/babel"
-        ],
-        "plugins": [
-          [
-            "styled-components",
-            {
-              "ssr": true,
-              "displayName": true
-            }
-          ]
-        ]
-      },
-      "production": {
-        "presets": [
-          "next/babel"
-        ],
-        "plugins": [
-          [
-            "styled-components",
-            {
-              "ssr": true,
-              "displayName": true
-            }
-          ]
-        ]
-      },
-      "test": {
-        "presets": [
-          [
-            "next/babel",
-            {
-              "preset-env": {
-                "modules": "commonjs"
-              }
-            }
-          ]
-        ],
-        "plugins": [
-          [
-            "styled-components",
-            {
-              "ssr": true,
-              "displayName": true
-            }
-          ]
-        ]
-      }
-    }
-  }
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 ChromeAndroid versions",
+    "last 2 Firefox versions",
+    "last 2 FirefoxAndroid versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions",
+    "last 2 OperaMobile versions"
+  ]
 }
